@@ -12,10 +12,10 @@ char *word;
 int *partialMatchArray;   //partial match array
 int ArticleLength;
 int wordLength;
-int readArticleFromFile(){           //Ω´Œƒº˛÷–µƒ◊÷∑˚¥Æ¥Ê∑≈÷¡ ˝◊Èarticle÷–
+int readArticleFromFile(){           //从文件中读取文章
     ArticleLength = articleLong();
     cout<<ArticleLength<<endl;
-    article = new char[ArticleLength];   //¥Ê∑≈Œƒº˛÷–◊÷∑˚¥Æ
+    article = new char[ArticleLength];   //动态分配article数组长度
     readFile(article);
     cout<<article;
     cout<<endl;
@@ -23,7 +23,7 @@ int readArticleFromFile(){           //Ω´Œƒº˛÷–µƒ◊÷∑˚¥Æ¥Ê�
 }
 int getWord(){
     wordLength = inPutWordLength();
-    word = new char[wordLength];      //¥Ê∑≈–Ë≤È’“µƒ◊÷∑˚¥Æ
+    word = new char[wordLength];      //动态分配单词长度
     inPutWord(word);
     cout<<word<<endl;
     return 0;

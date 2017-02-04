@@ -12,7 +12,7 @@ void inputFileName(){
     cin>>readFileName;
 
 }
-int articleLong(){   //∂¡»°Œƒº˛÷–◊÷∑˚ ˝
+int articleLong(){   //读取文章长度
     char ch;
     int i;
     inputFileName();
@@ -33,7 +33,7 @@ int articleLong(){   //∂¡»°Œƒº˛÷–◊÷∑˚ ˝
     fclose(fp);
     return i;
 }
-void readFile( char * article){ //¥”Œƒº˛÷–Ω´◊÷∑˚¥Æ∂¡»Îarticle ˝◊È÷–
+void readFile( char * article){ 
     char ch;
     FILE *fp;
     fp = fopen(readFileName,"r");
